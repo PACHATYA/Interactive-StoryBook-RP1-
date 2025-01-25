@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready Player One - Interactive Storybook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="background-music" loop muted>
+    <source src="Ready-Player-one0theme .mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<div id="storybook-container">
+    <div id="story-content">
+        <h1 id="story-title">Ready Player One</h1>
+        <div id="story-text"></div>
+    </div>
+    <div id="navigation">
+        <button id="next-button" onclick="nextSection()">Next</button>
+        <button id="start-over" onclick="startOver()">Start Over</button>
+        <!-- Music control buttons -->
+        <button onclick="toggleMusic()">Pause/Play Music</button>
+        <button onclick="increaseVolume()">Increase Volume</button>
+        <button onclick="decreaseVolume()">Decrease Volume</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
